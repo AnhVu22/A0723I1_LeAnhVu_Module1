@@ -1,0 +1,28 @@
+.taokhung{
+    border: 1px solid black;
+    width: 430px;
+    padding: 5px;
+}
+.thbg{background-color: orangered;
+    color: white;
+    text-align: center;
+    padding: inherit;
+    width: 430px;
+    font-size: 25px;
+}
+.hbcolor{
+    color: orange;
+}
+.tdmain{
+    color: blue;
+    text-align: right;
+}
+.wufoo {
+    font-family: Arial; sans-serif;
+}
+.tdhb{
+    color: blue;
+    text-align: right;
+    padding-left: 57px;
+}
+
