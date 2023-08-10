@@ -1,13 +1,14 @@
 .taokhung{
     border: 1px solid black;
-    width: 430px;
+    width: 460px;
     padding: 5px;
+    background-color: lightgoldenrodyellow;
 }
 .thbg{background-color: lightgreen;
     color: blue;
     text-align: left;
     padding: inherit;
-    width: 430px;
+    width: 450px;
     font-size: 25px;
 }
 .hbcolor{

@@ -3,28 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tạo Form đơn giản phần 2</title>
-    <link rel="stylesheet" type="text/css" href="style2.css"/>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
   </head>
   <body class="wufoo">
-  <form method="get" action="https://www.google.com/" class="taokhung">
-    <table>
-      <tr>
-        <td class="thbg" colspan="2">ĐĂNG KÝ HỌC VIÊN </td>
-      </tr>
-      <tr>
-        <td class="tdmain">Họ và tên</td>
-        <td><label><input type="text" name="yourname" placeholder="Full name"/></label></td>
-      </tr>
-      <tr>
-        <td class="tdmain">Ngày sinh</td>
-        <td><label><input type="text" name="dateofbirth" placeholder="dd/mm/yyyy"/></label></td>
-      </tr>
-      <tr>
-        <td class="tdmain">Giới tính</td>
-        <td><label><input type="radio" name="gender" value="male"/>Nam</label></td>
-        <td><label><input type="radio" name="gender" value="female"/>Nữ</label></td>
-      </tr>
-    </table>
-  </form>
+    <form method="get" action="https://www.google.com/" class="taokhung">
+      <table>
+        <tr>
+          <td class="thbg" colspan="2">ĐĂNG KÝ HỌC VIÊN</td>
+        </tr>
+        <tr>
+          <td class="tdmain">Họ và tên</td>
+          <td>
+            <label><input type="text" name="yourname" placeholder="Full name" /></label>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdmain">Ngày sinh</td>
+          <td>
+            <label><input type="text" name="dateofbirth" placeholder="dd/mm/yyyy" /></label>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdmain">Giới tính</td>
+          <td>
+            <label><input type="radio" name="gender" value="male" />Nam</label>
+            <label><input type="radio" name="gender" value="female" />Nữ</label>
+
+          </td>
+        </tr>
+        <tr>
+          <td class="tdmain">Địa chỉ</td>
+          <td>
+            <textarea rows="5" cols="35"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdmain">Lớp</td>
+          <td>
+            <select name="class">
+              <option value="chonlop">--Chọn lớp--</option>
+              <option value="A1">A0723I1</option>
+              <option value="A2">A0723I2</option>
+              <option value="A3">A0723I3</option>
+              <option value="A4">A0723I4</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdmain">Email</td>
+          <td>
+            <label><input type="text" name="email" placeholder="example@gmail.com" /></label>
+          </td>
+        </tr>
+        <tr>
+          <td class="tdmain">Điện thoại</td>
+          <td>
+            <label><input type="text" name="phone" placeholder="09xxxxxxxxx" /></label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" name="submit" value="Đăng ký"/>
+            <input type="reset" name="reset" value="Nhập lại"/>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>

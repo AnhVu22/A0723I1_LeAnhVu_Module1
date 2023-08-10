@@ -1,13 +1,13 @@
 .taokhung{
     border: 1px solid black;
-    width: 430px;
+    width: 500px;
     padding: 5px;
 }
 .thbg{background-color: orangered;
     color: white;
     text-align: center;
     padding: inherit;
-    width: 430px;
+    width: 500px;
     font-size: 25px;
 }
 .hbcolor{
@@ -23,6 +23,6 @@
 .tdhb{
     color: blue;
     text-align: right;
-    padding-left: 57px;
+    padding-left: 65px;
 }
 
