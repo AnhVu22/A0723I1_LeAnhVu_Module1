@@ -1,0 +1,22 @@
+.tableday{
+    border-collapse: collapse;
+    border: 3px solid dimgray;
+    border-style: groove;
+}
+.tdday {
+    text-align: center;
+    height: 30px;
+    width: 89px;
+    border-style: groove;
+    border: 2px solid dimgray;
+
+}
+.thday{
+    height: 40px;
+    width: 90px;}
+
+.tdday1 {
+    height: 30px;
+    width: 90px;
+}
+

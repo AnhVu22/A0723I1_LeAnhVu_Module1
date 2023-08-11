@@ -1,0 +1,18 @@
+.backgorund {background-color: orangered;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    width: 350px;}
+.background {padding: 1px;
+width: 500px;}
+.symbol {font-size: 120%;
+line-height: 135%;}
+.spanlabel {
+    margin: 0;
+    padding-top: 3px;
+    clear: both;
+    font-size: 85%;
+    line-height: 160%;
+    color: #444;
+    display: block;
+}
