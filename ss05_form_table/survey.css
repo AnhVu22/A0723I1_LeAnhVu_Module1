@@ -16,3 +16,8 @@ line-height: 135%;}
     color: #444;
     display: block;
 }
+
+.bold {
+    font-weight: bold;
+    text-align: center;
+}
