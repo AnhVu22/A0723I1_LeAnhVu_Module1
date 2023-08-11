@@ -1,22 +1,32 @@
-table {
+.table1 {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 400px;
-    border: 1px solid black;
-    font-size: 16px;
-}
-th {
-    font-family: arial, sans-serif;
-    text-align: center;
-    border-collapse: collapse;
-    background-color: yellow;
-    border: 1px solid black;
-    padding: 5px;
-}
-td {
-    font-family: arial, sans-serif;
+    width: 20%;}
+.td1 {
+    border: 1px solid #dddddd;
     text-align: left;
-    border:1px solid black;
+    padding: 8px;}
+.th1{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: yellow;}
+.table2 {
+    font-family: arial, sans-serif;
     border-collapse: collapse;
-    padding: 3px;
+    width: 35%;}
+
+.td2 {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;}
+
+.tablenoborder {
+    font-family: arial, sans-serif;
+    width: 35%;}
+.colortr{
+    font-family: Arial, sans-serif;
+    color: blue;
 }
+
+
