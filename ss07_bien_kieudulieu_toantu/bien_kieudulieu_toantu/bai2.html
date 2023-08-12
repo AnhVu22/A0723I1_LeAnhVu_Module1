@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<h1>NHẬP NHIỆT ĐỘ (ĐỘ C)</h1>
+<table>
+    <tr>
+        <td>
+            <label>
+                Nhệt độ (độ C):
+                <input type="number" id="doC">
+            </label>
+        </td>
+    </tr>
+    <tr>
+    <tr>
+        <td>
+            <button onclick="chuyendoi()" id="average">Convert</button>
+        </td>
+    </tr>
+</table>
+    <script>
+    function chuyendoi() {
+        let doC = parseFloat(document.getElementById("doC").value);
+        let doF = (doC * 9)/ 37;
+        document.getElementById("sum").innerHTML = "Result:" + doF;
+    }
+    </script>
+</body>
+</html>

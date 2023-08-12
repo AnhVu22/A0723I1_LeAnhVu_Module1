@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập điểm của một sinh viên</title>
+</head>
+<body>
+<h1>NHẬP ĐIỂM CỦA SINH VIÊN</h1>
+<table>
+    <tr>
+        <td>
+            <label>
+                Vật lý:
+                <input type="text" id="ly">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                Hóa học:
+                <input type="text" id="hoa">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                Sinh học:
+                <input type="text" id="sinh">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="tinhdiem()" id="average">Tính điểm trung bình</button>
+        </td>
+        <td>
+            <button onclick="tinhdiem()" id="sum">Tổng điểm</button>
+        </td>
+    </tr>
+</table>
+    <script>
+    function tinhdiem() {
+        let ly = parseFloat(document.getElementById("ly").value);
+        let hoa = parseFloat(document.getElementById("hoa").value);
+        let sinh = parseFloat(document.getElementById("sinh").value);
+        let sum = (ly + hoa + sinh);
+        let average = sum / 3;
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("average").innerHTML = average.toFixed(2);
+    }
+    </script>
+</body>
+</html>
