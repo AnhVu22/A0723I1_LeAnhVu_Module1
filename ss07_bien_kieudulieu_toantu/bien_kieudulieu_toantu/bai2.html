@@ -5,29 +5,28 @@
     <title>Chuyển đổi nhiệt độ</title>
 </head>
 <body>
-<h1>NHẬP NHIỆT ĐỘ (ĐỘ C)</h1>
+<h1>CHUYỂN ĐỔI &#186C SANG &#186F</h1>
 <table>
     <tr>
         <td>
-            <label>
-                Nhệt độ (độ C):
+            <label for="doC">
+                Nhệt độ (&#186C):
                 <input type="number" id="doC">
             </label>
         </td>
     </tr>
-    <tr>
     <tr>
         <td>
             <button onclick="chuyendoi()" id="average">Convert</button>
         </td>
     </tr>
 </table>
-    <script>
+<script>
     function chuyendoi() {
         let doC = parseFloat(document.getElementById("doC").value);
-        let doF = (doC * 9)/ 37;
-        document.getElementById("sum").innerHTML = "Result:" + doF;
+        let doF = doC * 1.8 + 32;
+        document.getElementById("average").innerHTML = "Result: " + doF.toFixed(2) + " &#186F";
     }
-    </script>
+</script>
 </body>
 </html>

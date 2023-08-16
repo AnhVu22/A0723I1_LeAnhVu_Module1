@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<h1>ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</h1>
+<table>
+    <tr style="font-weight: bold">
+        <td style="text-align: center">
+            <label for="soTien">Amount</label>
+        </td>
+        <td style="text-align: left">
+            <label for="fromC">From Currency</label>
+        </td>
+        <td style="text-align: left">
+            <label for="toC">To Currency</label>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 200px">
+            <input type="number" id="soTien" style="width: 170px">
+        </td>
+        <td style="width: 150px">
+            <select id="fromC" style="width: 120px">
+                <option>VietNam</option>
+                <option>USD</option>
+            </select>
+        </td>
+        <td style="width: 150px">
+            <select id="toC" style="width: 120px">
+                <option>USD</option>
+                <option>VietNam</option>
+            </select>
+        </td>
+        <td style="width: 150px">
+            <button onclick="convert()" id="chuyenDoi" style="background-color: blueviolet; color: white">Convert
+            </button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function convert() {
+        let soTien = parseInt(document.getElementById("soTien").value);
+        let fromC = document.getElementById("fromC");
+        let toC = document.getElementById("toC");
+        let result = soTien * 23000;
+        document.getElementById("chuyenDoi").innerHTML = "Result: " + result + "$";
+    }
+</script>
+</body>
+</html>
