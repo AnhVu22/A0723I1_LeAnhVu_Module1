@@ -24,14 +24,14 @@
         </td>
         <td style="width: 150px">
             <select id="fromC" style="width: 120px">
-                <option>VietNam</option>
-                <option>USD</option>
+                <option value="23000">VietNam</option>
+                <option value="1">USD</option>
             </select>
         </td>
         <td style="width: 150px">
             <select id="toC" style="width: 120px">
-                <option>USD</option>
-                <option>VietNam</option>
+                <option value="1">USD</option>
+                <option value="23000">VietNam</option>
             </select>
         </td>
         <td style="width: 150px">
@@ -44,10 +44,10 @@
 <script>
     function convert() {
         let soTien = parseInt(document.getElementById("soTien").value);
-        let fromC = document.getElementById("fromC");
-        let toC = document.getElementById("toC");
-        let result = soTien * 23000;
-        document.getElementById("chuyenDoi").innerHTML = "Result: " + result + "$";
+        let fromC = parseInt(document.getElementById("fromC").value);
+        let toC = parseInt(document.getElementById("toC").value);
+        let result = soTien * (toC / fromC);
+        document.getElementById("chuyenDoi").innerHTML = "Result: " + result ;
     }
 </script>
 </body>
