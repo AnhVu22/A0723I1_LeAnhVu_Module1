@@ -6,56 +6,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<table>
-    <tr>
-        <td colspan="3">
-            <label><input type="text" id="display" placeholder="0" class="display" disabled></label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" value="(">(</button>
-            <button type="button" value=")">)</button>
-            <button type="button" value="%">%</button>
-            <button type="reset" value="clear">AC</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-            <button type="button" value="percent" onclick="">&#247</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-            <button type="button" value="multi" onclick="">x</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
-            <button type="button" value="sub" onclick="">-</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" value="0">0</button>
-            <button type="button" value="dot">.</button>
-            <button type="button" value="result">=</button>
-            <button type="button" value="add">+</button>
-        </td>
-    </tr>
-</table>
-
-<script>
-
-</script>
+<form>
+    <table>
+        <tr>
+            <td colspan="3">
+                <label><input type="text" name="display" placeholder="0" class="display"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="(" onclick="display.value += '('">(</button>
+                <button type="button" value=")" onclick="display.value += ')'">)</button>
+                <button type="button" value="%" onclick="display.value += '%'">%</button>
+                <button type="reset" value="clear">AC</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="7" onclick="display.value += '7'">7</button>
+                <button type="button" value="8" onclick="display.value += '8'">8</button>
+                <button type="button" value="9" onclick="display.value += '9'">9</button>
+                <button type="button" value="/" onclick="display.value += '/'">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="4" onclick="display.value += '4'">4</button>
+                <button type="button" value="5" onclick="display.value += '5'">5</button>
+                <button type="button" value="6" onclick="display.value += '6'">6</button>
+                <button type="button" value="x" onclick="display.value += 'x'">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="1" onclick="display.value += '1'">1</button>
+                <button type="button" value="2" onclick="display.value += '2'">2</button>
+                <button type="button" value="3" onclick="display.value += '3'">3</button>
+                <button type="button" value="-" onclick="display.value += '-'">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="0" onclick="display.value += '0'">0</button>
+                <button type="button" value="." onclick="display.value += '.'">.</button>
+                <button type="button" value="=" onclick="display.value = eval(display.value)">=</button>
+                <button type="button" value="+" onclick="display.value += '+'">+</button>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
