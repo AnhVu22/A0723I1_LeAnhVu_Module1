@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2" style="text-align: center; font-weight: bold; font-size: 25px">
+            <label for="weight"> Cân nặng (Kg) </label>
+        </td>
+        <td colspan="2" style="text-align: center; font-weight: bold; font-size: 25px">
+            <label for="height"> Chiều cao (m) </label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label>
+                <input type="number" id="weight" style="width: 175px">
+            </label>
+        </td>
+        <td colspan="2">
+            <label>
+                <input type="number" id="height" style="width: 180px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="caculator()">Caculator</button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function caculator() {
+        let weight = parseFloat(document.getElementById('weight').value);
+        let height = parseFloat(document.getElementById('height').value);
+        let bmi = weight / (height * height);
+        if (bmi < 18)
+            alert("Underweight");
+        else if (bmi < 25.0)
+            alert("Normal");
+        else if (bmi < 30.0)
+            alert("Overweight");
+        else
+            alert("Obese");
+    }
+</script>
+
+</body>
+</html>
