@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc điều kiện 1 - Bài 6</title>
+</head>
+<body>
+<h1>Tính hoa hồng nhận được theo mức doanh số bán hàng</h1>
+<table>
+    <tr>
+        <td colspan="2" style="text-align: center; font-weight: bold; font-size: 25px">
+            <label for="doanhSo"> Nhập doanh số bán hàng (VND)</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label>
+                <input type="number" id="doanhSo" style="width: 175px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="caculator()">Caculator</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function caculator() {
+        let doanhSo = parseInt(document.getElementById('doanhSo').value);
+        if (doanhSo >= 10000000) {
+            document.getElementById("result").innerText = "Hoa hồng là: " + (doanhSo * 0.5) + "VND";
+        } else {
+            if (10000000 > doanhSo && doanhSo >= 5000000) {
+                document.getElementById("result").innerText = "Hoa hồng là: " + (doanhSo * 0.3) + "VND";
+            } else {
+                if (5000000 > doanhSo && doanhSo >= 3000000) {
+                    document.getElementById("result").innerText = "Hoa hồng là: " + (doanhSo * 0.1) + "VND";
+                } else {
+                    document.getElementById("result").innerText = "Không có hoa hồng";
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
