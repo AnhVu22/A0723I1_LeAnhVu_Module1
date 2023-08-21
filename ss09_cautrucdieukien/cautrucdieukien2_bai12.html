@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cấu trúc điều kiện 2 - Bài 12</title>
+</head>
+<body>
+<h1>Tính lãi ngân hàng</h1>
+<table>
+    <tr>
+        <td>
+            <label>
+                <input type="number" id="banDau" placeholder="Số tiền ban đầu (VNĐ)" style="width: 200px">
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="number" id="soThang" placeholder="Số tháng (tháng)" style="width: 200px">
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="number" id="laiSuat" placeholder="Lãi suất hàng tháng (%)" style="width: 200px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="tinhLai()" style="color: red; background-color: aqua">Tính lãi</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function tinhLai() {
+        let banDau = parseFloat(document.getElementById("banDau").value);
+        let soThang = parseFloat(document.getElementById("soThang").value);
+        let laiSuat = (parseFloat(document.getElementById("laiSuat").value)) / 100;
+        let tiengoC = banDau / soThang;
+        let tienLai;
+        if (tienThue <= 5000000) {
+            tienNop = tienThue * (5 / 100);
+        } else if (5000000 < tienThue <= 10000000) {
+            tienNop = (tienThue * (10 / 100)) - 250000;
+        } else if (10000000 < tienThue <= 18000000) {
+            tienNop = (tienThue * (15 / 100)) - 750000;
+        } else if (18000000 < tienThue <= 32000000) {
+            tienNop = (tienThue * (20 / 100)) - 1650000;
+        } else if (32000000 < tienThue <= 52000000) {
+            tienNop = (tienThue * (25 / 100)) - 3250000;
+        } else if (52000000 < tienThue <= 80000000) {
+            tienNop = (tienThue * (30 / 100)) - 5850000;
+        } else {
+            tienNop = (tienThue * (35 / 100)) - 9850000;
+        }
+        alert(tienNop + " VND");
+    }
+</script>
+</body>
+</html>

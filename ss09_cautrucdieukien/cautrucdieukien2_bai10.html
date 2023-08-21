@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cấu trúc điều kiện 2 - Bài 10</title>
+</head>
+<body>
+<h1>Tính giá điện</h1>
+<table>
+    <tr>
+        <td>
+            <label>
+                <input type="text" id="sanLuong" placeholder="Tổng điện năng tiêu thụ (kWh)" style="width: 200px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="tinhTien()" style="color: red; background-color: aqua">Tính tiền</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function tinhTien() {
+        let sanLuong = parseInt(document.getElementById("sanLuong").value);
+        let tongTien;
+        if (sanLuong <= 50) {
+            tongTien = sanLuong * 1678;
+        } else if (50 < sanLuong <= 100) {
+            tongTien = (50 * 1678) + ((sanLuong - 50) * 1734);
+        } else if (100 < sanLuong <= 200) {
+            tongTien = (50 * 1678) + ((sanLuong - 50) * 1734) + ((sanLuong - 100) * 2014);
+        }
+        alert(tongTien + " VND");
+    }
+</script>
+</body>
+</html>
