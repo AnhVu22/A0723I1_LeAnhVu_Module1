@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cấu trúc điều kiện 2 - Bài 1</title>
+</head>
+<body>
+<h1>Chuyển đổi độ C (Celsius) sang độ F (Fahrenheit)</h1>
+
+<table>
+    <tr>
+        <td>
+            <label>Nhập độ C (Celsius) <input type="number" id="doC"/></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="doF">
+            <!-- <label>Độ F (Fahrenheit)</label> -->
+        </td>
+    </tr>
+</table>
+
+<!-- JAVA SCRIPT -->
+<script>
+    function convert() {
+        let doC = parseFloat(document.getElementById("doC").value);
+        let doF = (doC * 9) / (5 + 32);
+        document.getElementById("doF").innerText =
+            "Độ F (Fahrenheit): " + doF.toFixed(2);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cấu trúc điều kiện 2 - Bài 8</title>
+</head>
+<body>
+<h1>Kiểm tra số có phải là số tuổi không</h1>
+<table>
+    <tr>
+        <td style="color: blue">Nhập một số bất kì để kiểm tra</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="soN"/></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="ketQua()" style="color: white; background-color: #285f8f; padding: 5px; margin-left: 50px">
+                Kết quả
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td id="result"></td>
+    </tr>
+</table>
+
+<script>
+    function ketQua() {
+        let soN = parseInt(document.getElementById("soN").value);
+        if (soN > 0 && soN < 120) {
+            document.getElementById("result").innerText = "Số nhập vào là tuổi của một người";
+        } else {
+            document.getElementById("result").innerText = "Yêu cầu nhập lại";
+        }
+    }
+</script>
+</body>
+</html>
