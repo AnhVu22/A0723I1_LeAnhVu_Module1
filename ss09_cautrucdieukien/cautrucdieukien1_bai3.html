@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc điều kiện 1 - Bài 3</title>
+</head>
+<body>
+<h1>Kiểm tra số nguyên bất kỳ lớn hay nhỏ hơn 0</h1>
+<table>
+    <tr>
+        <td colspan="2" style="text-align: center; font-weight: bold; font-size: 25px">
+            <label for="soN"> Nhập số nguyên bất kỳ </label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label>
+                <input type="number" id="soN" style="width: 175px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="caculator()">Caculator</button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function caculator() {
+        let soN = parseInt(document.getElementById('soN').value);
+        if (soN > 0) {
+            alert("Số vừa nhập là số nguyên lớn hơn 0");
+        } else {
+            alert("Số vừa nhập là số nguyên nhỏ hơn 0");
+        }
+    }
+</script>
+</body>
+</html>

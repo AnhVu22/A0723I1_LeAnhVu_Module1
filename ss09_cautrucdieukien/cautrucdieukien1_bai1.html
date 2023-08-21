@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc điều kiện 1 - Bài 1</title>
+</head>
+<body>
+<h1>Kiểm tra hai số có chia hết cho nhau không</h1>
+<table>
+    <tr>
+        <td colspan="2" style="text-align: center; font-weight: bold; font-size: 25px">
+            <label for="soA"> Nhập số a </label>
+        </td>
+        <td colspan="2" style="text-align: center; font-weight: bold; font-size: 25px">
+            <label for="soB"> Nhập số B </label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label>
+                <input type="number" id="soA" style="width: 175px">
+            </label>
+        </td>
+        <td colspan="2">
+            <label>
+                <input type="number" id="soB" style="width: 180px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="caculator()">Caculator</button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function caculator() {
+        let soA = parseFloat(document.getElementById('soA').value);
+        let soB = parseFloat(document.getElementById('soB').value);
+        // let c = soA % soB;
+        if (soA % soB === 0) {
+            alert('Số a chia hết cho số b');
+        } else {
+            alert('Số a không chia hết cho số b');
+        }
+    }
+</script>
+
+</body>
+</html>
