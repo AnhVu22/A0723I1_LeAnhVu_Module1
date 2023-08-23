@@ -11,49 +11,46 @@
     <tr>
         <td>
             <label>
-                <input type="number" id="banDau" placeholder="Số tiền ban đầu (VNĐ)" style="width: 200px">
+                <input type="number" id="banDau" placeholder="Số tiền ban đầu (VNĐ)" style="width: 250px">
             </label>
         </td>
         <td>
             <label>
-                <input type="number" id="soThang" placeholder="Số tháng (tháng)" style="width: 200px">
-            </label>
-        </td>
-        <td>
-            <label>
-                <input type="number" id="laiSuat" placeholder="Lãi suất hàng tháng (%)" style="width: 200px">
+                <input type="number" id="soNam" placeholder="Số năm (năm)" style="width: 250px">
             </label>
         </td>
     </tr>
     <tr>
         <td>
-            <button onclick="tinhLai()" style="color: red; background-color: aqua">Tính lãi</button>
+            <label>
+                <input type="number" id="laiSuat" placeholder="Lãi suất hàng năm (%)" style="width: 250px">
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="number" id="ghepLai" placeholder="Số lần ghép lãi trong 1 năm (năm = 1)"
+                       style="width: 250px">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="caculator()" style="color: red; background-color: aqua">Tính lãi</button>
         </td>
     </tr>
 </table>
 <script>
-    function tinhLai() {
-        let banDau = parseFloat(document.getElementById("banDau").value);
-        let soThang = parseFloat(document.getElementById("soThang").value);
-        let laiSuat = (parseFloat(document.getElementById("laiSuat").value)) / 100;
-        let tiengoC = banDau / soThang;
-        let tienLai;
-        if (tienThue <= 5000000) {
-            tienNop = tienThue * (5 / 100);
-        } else if (5000000 < tienThue <= 10000000) {
-            tienNop = (tienThue * (10 / 100)) - 250000;
-        } else if (10000000 < tienThue <= 18000000) {
-            tienNop = (tienThue * (15 / 100)) - 750000;
-        } else if (18000000 < tienThue <= 32000000) {
-            tienNop = (tienThue * (20 / 100)) - 1650000;
-        } else if (32000000 < tienThue <= 52000000) {
-            tienNop = (tienThue * (25 / 100)) - 3250000;
-        } else if (52000000 < tienThue <= 80000000) {
-            tienNop = (tienThue * (30 / 100)) - 5850000;
+    function caculator() {
+        let banDau = parseInt(document.getElementById("banDau").value);
+        let soNam = parseInt(document.getElementById("soNam").value);
+        let laiSuat = (parseInt(document.getElementById("laiSuat").value)) / 100;
+        let ghepLai = parseInt(document.getElementById("ghepLai").value);
+        let tinhLai = banDau * (Math.pow((1 + (laiSuat / ghepLai)), (soNam * ghepLai)));
+        if (banDau < 0 || soNam < 0 || laiSuat < 0 || ghepLai < 1) {
+            alert("Nhập lại các thông tin cần thiết");
         } else {
-            tienNop = (tienThue * (35 / 100)) - 9850000;
+            alert("Số tiền lãi nhận được là: " + tinhLai.toFixed(0) + "VNĐ");
         }
-        alert(tienNop + " VND");
     }
 </script>
 </body>
