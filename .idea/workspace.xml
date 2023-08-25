@@ -39,6 +39,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8ea3f71065dd292927015e33ff9c8764b36995f7
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -47,17 +51,47 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;D:/Java/A0723I1_LeAnhVu_Module1/ss09_cautrucdieukien&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaFullstack/A0723I1_LeAnhVu_Module1/ss09_cautrucdieukien&quot;,
+>>>>>>> 8ea3f71065dd292927015e33ff9c8764b36995f7
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Java/A0723I1_LeAnhVu_Module1/ss09_cautrucdieukien",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 510cdc7b1c53166fe7dc48291ec3043d350dfc99
+>>>>>>> 8ea3f71065dd292927015e33ff9c8764b36995f7
   }
 }</component>
   <component name="RecentsManager">
@@ -81,6 +115,10 @@
       <workItem from="1692344474059" duration="1366000" />
       <workItem from="1692345855824" duration="27000" />
       <workItem from="1692614802971" duration="21000" />
+<<<<<<< HEAD
+      <workItem from="1692614836043" duration="12313000" />
+      <workItem from="1692787940994" duration="15000" />
+=======
       <workItem from="1692614836043" duration="11446000" />
       <workItem from="1692672880601" duration="56000" />
       <workItem from="1692672947824" duration="848000" />
@@ -89,7 +127,11 @@
       <workItem from="1692755791829" duration="22000" />
       <workItem from="1692759604385" duration="2041000" />
       <workItem from="1692761729769" duration="2196000" />
+<<<<<<< HEAD
       <workItem from="1692939405428" duration="62000" />
+=======
+>>>>>>> 510cdc7b1c53166fe7dc48291ec3043d350dfc99
+>>>>>>> 8ea3f71065dd292927015e33ff9c8764b36995f7
     </task>
     <servers />
   </component>
