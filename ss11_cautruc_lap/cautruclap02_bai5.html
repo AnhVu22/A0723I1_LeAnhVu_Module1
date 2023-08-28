@@ -9,10 +9,14 @@
     <h1>Bài 5: Viết chương trình tính lãi ngân hàng</h1>
 
     <script>
-      let banDau = +prompt("Nhâp số tiền ban đầu");
-      let soThang = +prompt("Nhâp số tháng cho vay");
-      let laiXuat = +prompt("Nhập lãi xuất hàng tháng");
-      let m = +prompt("Số lần ghép lãi trong một năm");
+      let banDau = parseInt(prompt("Nhâp số tiền ban đầu"));
+      let soThang = parseInt(prompt("Nhâp số tháng cho vay"));
+      let laiXuat = parseInt(prompt("Nhập lãi xuất hàng tháng"));
+      let tongCong = banDau;
+      for (let i = 0; i <= soThang; i++) {
+        tongCong =  banDau * (1 + laiXuat/100);
+      }
+      alert("Tổng tiền lãi: " + (tongCong - banDau) + "VNĐ");
     </script>
   </body>
 </html>

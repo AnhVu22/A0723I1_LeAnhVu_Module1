@@ -11,13 +11,13 @@
 
     <script>
       function play() {
-        let min = +prompt("Nhập số Min");
-        let max = +prompt("Nhập số Max");
+        let min = parseInt(prompt("Nhập số Min"));
+        let max = parseInt(prompt("Nhập số Max"));
         let random = Math.round(Math.random() * (max - min) + min);
         console.log(random);
         let soLan = 1;
         do {
-          let number = +prompt("Nhập số bạn đoán");
+          let number = parseInt(prompt("Nhập số bạn đoán"));
           if (number === random) {
             alert("Bạn đã đoán đúng");
             break;

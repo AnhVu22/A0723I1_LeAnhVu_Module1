@@ -11,11 +11,11 @@
     <script>
       let a = 0;
       let b = 1;
-      for (i = 1; i < 19; i++) {
+      for (let i = 1; i < 19; i++) {
         c = a + b;
         a = b;
         b = c;
-        if (c % 5 == 0) {
+        if (c % 5 === 0) {
           document.write("Số đầu tiên trong dãy Fibonacci chia hết cho 5 là: " + c);
           break;
         }
