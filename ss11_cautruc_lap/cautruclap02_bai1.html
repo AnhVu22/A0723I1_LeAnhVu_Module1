@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>BÀI TẬP CẤU TRÚC LẶP 2</title>
-  </head>
-  <body>
-    <h1>Bài 1: In dãy Fibonacci</h1>
-    <input type="text" id="so" placeholder="Nhập số" /> <br />
-    <button onclick="inDayso()">Print</button>
-    <script>
-      function inDayso() {
+</head>
+<body>
+<h1>Bài 1: In dãy Fibonacci</h1>
+<label for="so"><input type="text" id="so" placeholder="Nhập số"> </label>
+<button onclick="inDayso()">Print</button>
+<script>
+    function inDayso() {
         let number = parseInt(document.getElementById("so").value);
         let a = 0,
-          b = 1,
-          next;
+            b = 1,
+            next;
         document.write(a + "<br>");
         document.write(b + "<br>");
         for (let i = 1; i <= number; i++) {
-          next = a + b;
-          a = b;
-          b = next;
-          document.write(next + "<br>");
+            next = a + b;
+            a = b;
+            b = next;
+            document.write(next + "<br>");
         }
-      }
-    </script>
-  </body>
+    }
+</script>
+</body>
 </html>
