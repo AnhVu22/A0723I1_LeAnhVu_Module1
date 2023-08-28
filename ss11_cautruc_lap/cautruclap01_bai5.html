@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BÀI TẬP CẤU TRÚC LẶP 1</title>
+  </head>
+  <body>
+    <h1>Bài 3: Tính tổng 20 số đầu tiên trong dãy Fibonacci</h1>
+
+    <script>
+      let sum = 0;
+      let a = 0,
+        b = 1,
+        c;
+      document.write(a + "<br>");
+      document.write(b + "<br>");
+      for (i = 1; i < 19; i++) {
+        c = a + b;
+        sum += c;
+        a = b;
+        b = c;
+        document.write(c + "<br>");
+      }
+      document.write("Tổng 20 số đầu tiền của dãy Fibonacci: " + sum);
+    </script>
+  </body>
+</html>

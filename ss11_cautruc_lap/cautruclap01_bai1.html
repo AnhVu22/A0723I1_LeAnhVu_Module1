@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BÀI TẬP CẤU TRÚC LẶP</title>
+  </head>
+  <body>
+    <h1>Bài 1: Đếm từ 1 đến 100</h1>
+    <p id="result"></p>
+    <script>
+      let i;
+      let text = " ";
+      for (i = 0; i < 100; i++) {
+        text += i + "<br>";
+        document.getElementById("result").innerHTML = text;
+        if (i == 99) {
+          alert("Đã hoàn thành");
+        }
+      }
+    </script>
+  </body>
+</html>

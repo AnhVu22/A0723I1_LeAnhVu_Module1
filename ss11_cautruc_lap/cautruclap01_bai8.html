@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BÀI TẬP CẤU TRÚC LẶP 1</title>
+  </head>
+  <body>
+    <h1>Bài 8: Game đoán số</h1>
+    <button onclick="play()">Play</button>
+
+    <script>
+      function play() {
+        let min = +prompt("Nhập số Min");
+        let max = +prompt("Nhập số Max");
+        let random = Math.round(Math.random() * (max - min) + min);
+        console.log(random);
+        let soLan = 1;
+        do {
+          let number = +prompt("Nhập số bạn đoán");
+          if (number === random) {
+            alert("Bạn đã đoán đúng");
+            break;
+          } else if (number < random) {
+            alert("Số bạn nhập nhỏ hơn số được chọn");
+          } else {
+            alert("Số bạn nhập lớn hơn số được chọn");
+          }
+          if (soLan === 3) {
+            alert("Bạn đã thua cuộc");
+          }
+          soLan++;
+        } while (soLan <= 3);
+      }
+    </script>
+  </body>
+</html>
