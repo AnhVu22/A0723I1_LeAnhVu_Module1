@@ -9,15 +9,15 @@
 <script>
     let number = 0;
     let N = 2;
-    while (Number < 20){
+    while (number < 20) {
         let count = 0;
         for (let i = 2; i < N; i++) {
-            if(N % i === 0){
+            if (N % i === 0) {
                 count++;
             }
         }
-        if(count === 0){
-            document.write(N+"</br>")
+        if (count === 0) {
+            document.write(N + "</br>")
             number++;
         }
         N++;
