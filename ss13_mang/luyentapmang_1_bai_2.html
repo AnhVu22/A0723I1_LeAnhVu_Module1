@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng - Bài 2</title>
+</head>
+<h1>Khởi tạo mảng số nguyên và tìm số lớn nhất</h1>
+
+<body>
+<button onclick="maxElement()">START</button>
+<p id="result"></p>
+<script>
+    function maxElement() {
+        let arr = new Array(10);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = parseInt(prompt("Nhập số thứ " + (i + 1) + ":"));
+            let max = arr[0];
+            let maxIndex = 0;
+            if (max < arr[i]) {
+                max = arr[i];
+                maxIndex = i;
+            }
+            document.getElementById("result").innerHTML = "Số lớn nhất là: " + max + "<br>" +
+                "Vị trí của số lớn nhất là: " + maxIndex;
+        }
+    }
+</script>
+</body>
+</html>

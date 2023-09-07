@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng - Bài 3</title>
+</head>
+<h1>Khởi tạo mảng số nguyên và tính trung bình</h1>
+
+<body>
+<button onclick="maxElement()">START</button>
+<p id="result"></p>
+<script>
+    function maxElement() {
+        let arr = new Array(10);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = parseInt(prompt("Nhập số thứ " + (i + 1) + ":"));
+            let max = arr[0];
+            let sum = 0;
+            let average = 0;
+            if (max < arr[i]) {
+                max = arr[i];
+                for (let j of arr) {
+                    sum += j;
+                    average = sum / arr.length;
+                }
+            }
+            document.getElementById("result").innerHTML = "Số lớn nhất là: " + max + "<br>" +
+                "Giá trị trung bình của các phần tử trong mảng: " + average;
+        }
+    }
+</script>
+</body>
+</html>
