@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng - Bài 9</title>
+</head>
+<body>
+<h1>Khởi tạo mảng 2 chiều và gộp mảng</h1>
+<button onclick="sumArray()">START</button>
+<script>
+    function sumArray() {
+        let arr1 = [];
+        for (let i = 0; i < 10; i++) {
+            let number = Math.floor(Math.random() * 20);
+            arr1.push(number);
+        }
+        document.write("Mảng a được tạo ra: " + arr1 + "<br>");
+        let arr2 = [];
+        for (let i = 0; i < 10; i++) {
+            let number = Math.floor(Math.random() * 20);
+            arr2.push(number);
+        }
+        document.write("Mảng b được tạo ra: " + arr2 + "<br>");
+        let arr3 = arr2.concat(arr1);
+        document.write("Mảng c được tạo ra: " + arr3);
+    }
+
+</script>
+</body>
+</html>
