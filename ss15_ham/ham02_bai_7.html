@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 2 - Bài 7</title>
+</head>
+<body>
+<h1>Hàm truyền vào 2 số và đổi chỗ</h1>
+
+<script>
+    function swapNumber(numA, numB) {
+        let arr = [numA, numB];
+        alert("Hai số chưa đảo: " + arr);
+        return arr.reverse();
+    }
+
+    let numA = parseInt(prompt("Nhập số A: "));
+    let numB = parseInt(prompt("Nhập số B: "));
+    alert("Hai số đã đảo ngược: " + swapNumber(numA, numB));
+</script>
+
+</body>
+</html>
