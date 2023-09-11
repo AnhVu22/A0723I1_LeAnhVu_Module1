@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 1 - Bài 3</title>
+</head>
+<body>
+<h1>So sánh và tính tổng hai tham số</h1>
+
+<script>
+    function compareVal(numberA, numberB) {
+        if (numberA > numberB) {
+            return alert("Số A lớn hơn số B");
+        } else if (numberA <= numberB) {
+            return numberA + numberB;
+        }
+    }
+
+    let numberA = parseInt(prompt("Nhập số A: "));
+    let numberB = parseInt(prompt("Nhập số B: "));
+    document.write("Result: " + compareVal(numberA, numberB));
+</script>
+
+</body>
+</html>
