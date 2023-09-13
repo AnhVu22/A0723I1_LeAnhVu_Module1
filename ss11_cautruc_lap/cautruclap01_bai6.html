@@ -10,9 +10,15 @@
 
     <script>
       let sum = 0;
-      for (let i = 1; i <= 30; i++) {
-        a = 7 * i;
-        sum += a;
+      let count = 0;
+      for (let i = 1; i > 0; i++) {
+        if (i % 7 === 0) {
+          sum += i;
+          count += 1;
+        }
+        if (count > 30) {
+          break;
+        }
       }
       document.write(sum);
     </script>
