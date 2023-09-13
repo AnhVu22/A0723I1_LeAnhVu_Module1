@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng - Bài 4</title>
+</head>
+<body>
+<h1>Đếm số từ trong chuỗi</h1>
+<script>
+    let str = prompt('nhập chuỗi');
+    let arr = str.split(' ');
+    console.log(arr);
+    let count = 0;
+    for (let item of arr) {
+        if (typeof item == 'string' && isNaN(item)) {
+            count++;
+        }
+    }
+    document.write(str + '<br>' + `số từ trong chuỗi là ${count}`);
+</script>
+</body>
+</html>

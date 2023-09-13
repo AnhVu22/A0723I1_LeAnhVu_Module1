@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng - Bài 7</title>
+</head>
+<body>
+<h1>Tìm xem V có nằm trong mảng số nguyên không và xóa</h1>
+<button onclick="inArray()">START</button>
+<p id="result"></p>
+<script>
+    function inArray() {
+        let V = parseInt(prompt("Nhập vào số nguyên cần kiểm tra: "));
+        let arr = new Array(10);
+        let isExit = false;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = parseInt(prompt("Nhập số thứ " + (i + 1) + ":"));
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === V) {
+                    arr.splice(i, 1);
+                    arr.push(0);
+                    isExit = true;
+                    break;
+                }
+            }
+            if (isExit === false) {
+                document.getElementById("result").innerText = "V is not in the array.";
+            }
+            document.getElementById("result").innerText = "Mảng sau khi xóa: " + arr.join(", ");
+        }
+    }
+</script>
+</body>
+</html>

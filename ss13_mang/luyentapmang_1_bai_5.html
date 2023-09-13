@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng - Bài 5</title>
+</head>
+<body>
+<h1>Đếm số nguyên âm trong một chuỗi</h1>
+<p id="result"></p>
+<script>
+    let str = prompt("Nhập một dãy kí tự bất kỳ: ");
+    let nguyenAm = "aeiouAEIOU";
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (nguyenAm.indexOf(str[i]) !== -1) {
+            count += 1;
+        }
+        document.getElementById("result").innerHTML = "Số lượng nguyên âm là: " + count;
+    }
+</script>
+
+
+</body>
+</html>

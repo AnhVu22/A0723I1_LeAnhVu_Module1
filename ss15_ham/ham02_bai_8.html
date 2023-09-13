@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 2 - Bài 7</title>
+</head>
+<body>
+<h1>Hàm đảo ngược mảng</h1>
+
+<script>
+    function reverseArray(arr) {
+        let newArr = arr;
+        alert("Mảng chưa đảo: " + newArr);
+        return newArr.reverse();
+    }
+
+    let arr1 = [];
+    for (let i = 0; i < 10; i++) {
+        let number = Math.floor(Math.random() * 20);
+        arr1.push(number);
+    }
+    alert("Mảng đã đảo ngược: " + reverseArray(arr1));
+</script>
+
+</body>
+</html>

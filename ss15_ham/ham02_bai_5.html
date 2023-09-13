@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 2 - Bài 5</title>
+</head>
+<body>
+<h1>Hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất</h1>
+
+<script>
+    function checkMin(numA, numB, numC) {
+        let min = numA;
+        if (min < numB && min < numC) {
+            return alert("Số A là số nhỏ nhất");
+        } else if (min > numB && min < numC) {
+            return alert("Số B là số nhỏ nhất");
+        }
+        return alert("Số C là số nhỏ nhất");
+    }
+
+    let numA = parseInt(prompt("Nhập số A: "));
+    let numB = parseInt(prompt("Nhập số B: "));
+    let numC = parseInt(prompt("Nhập số C: "));
+    checkMin(numA, numB, numC);
+</script>
+
+</body>
+</html>

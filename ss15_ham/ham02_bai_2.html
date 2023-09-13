@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 2 - Bài 2</title>
+</head>
+<body>
+<h1>Hàm tính diện tích, chu vi hình tròn</h1>
+
+<script>
+    function squareCircle(radius) {
+        return Math.pow(radius, 2) * Math.PI;
+    }
+
+    function perimeterCircle(radius) {
+        return Math.PI * radius * 2;
+    }
+
+    let radius = parseInt(prompt("Nhập bán kính hình tròn: "));
+    document.write("Kết quả: " + squareCircle(radius).toFixed(2) + " m&#178" + "<br>");
+    document.write("Kết quả: " + perimeterCircle(radius).toFixed(2) + " m");
+</script>
+
+</body>
+</html>

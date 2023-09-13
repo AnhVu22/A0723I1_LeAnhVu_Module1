@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm</title>
+</head>
+<body>
+<h1>Chuyển đổi giữa feet và meters</h1>
+
+<script>
+    function footToMeters(ft) {
+        return 0.305 * ft;
+    }
+
+    function meterToFoot(m) {
+        return 3.279 * m;
+    }
+
+    let ft = parseInt(prompt("Nhập feet: "));
+    let m = parseInt(prompt("Nhập mét: "));
+    document.write("Result (ft to m): " + footToMeters(ft) + "<br>");
+    document.write("Result (m to ft): " + meterToFoot(m));
+</script>
+
+
+</body>
+</html>
