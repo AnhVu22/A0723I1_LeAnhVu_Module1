@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case study - Task 2 - Bài 3</title>
+    <title>Case study - Task 2 - Bài 2</title>
 </head>
 <body>
-<h1>Vẽ tam giác cân rỗng</h1>
+<h1>Vẽ tam giác cân đặc</h1>
 <script>
     let h = parseFloat(prompt("Nhâp chiều cao: "));
     for (let i = 1; i <= h; i++) {
@@ -13,11 +13,7 @@
             document.write("&nbsp");
         }
         for (let j = 1; j <= i; j++) {
-            if (i === 1 || j === 1 || i === h || j === i) {
             document.write("*");
-        } else {
-                document.write("&nbsp&nbsp");
-            }
         }
         document.write("<br>");
     }
