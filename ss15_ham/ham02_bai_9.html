@@ -8,16 +8,20 @@
 <h1>Hàm kiểm tra kí tự nằm trong mảng và số lần xuất hiện</h1>
 
 <script>
-    function checkCharacters(string) {
-        
+    function checkCharacters(arr, checkNum) {
+        const newArr = arr;
+        let count = 0;
+        for (const element of newArr) {
+            if (newArr.includes(checkNum)) {
+                return count += 1;
+            }
+        }
+        return -1;
     }
 
-    let arr = [];
-    for (let i = 0; i < 10; i++) {
-        let str = parseInt(prompt("Nhập kí tự: "));
-        arr.push(str).toString();
-    }
-    alert(checkCharacters(arr));
+    let checkNum = parseInt(prompt("Nhập kí tự cần kiểm tra: "));
+    let arr = [parseInt(prompt("Nhập kí tự: ")).toString()];
+    alert(checkCharacters(arr, checkNum));
 </script>
 
 </body>
