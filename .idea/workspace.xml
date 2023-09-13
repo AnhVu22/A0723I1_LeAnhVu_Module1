@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9bd8ddd-10f5-43b8-9424-923884ab78ff" name="Changes" comment="">
+    <list default="true" id="7dcaafb4-1c61-4425-9f86-1bd617836e44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15_ham/ham02_bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15_ham/ham02_bai_9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -26,20 +26,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;AnhVu22&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="60070b14-8164-4ca3-9957-c29374b589fe" />
-        <option name="url" value="https://github.com/AnhVu22/A0723I1_LeAnhVu_Module1.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,7 +33,7 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2UatpN4KIi5NCiyIu7G8bXbYucW" />
+  <component name="ProjectId" id="2U6D311dvKWDZYK1kfu0NyZBk1t" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -55,6 +41,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -63,52 +50,76 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaFullstack/A0723I1_LeAnhVu_Module1/ss15_ham&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaFullstack/A0723I1_LeAnhVu_Module1/ss09_cautrucdieukien&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Java/A0723I1_LeAnhVu_Module1/ss09_cautrucdieukien",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 510cdc7b1c53166fe7dc48291ec3043d350dfc99
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaFullstack\A0723I1_LeAnhVu_Module1\ss15_ham" />
-      <recent name="D:\JavaFullstack\A0723I1_LeAnhVu_Module1\ss13_mang" />
+      <recent name="D:\Java\A0723I1_LeAnhVu_Module1\ss09_cautrucdieukien" />
+      <recent name="D:\JavaFullstack\A0723I1_LeAnhVu_Module1\ss09_cautrucdieukien" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9bd8ddd-10f5-43b8-9424-923884ab78ff" name="Changes" comment="" />
-      <created>1693189703760</created>
+      <changelist id="7dcaafb4-1c61-4425-9f86-1bd617836e44" name="Changes" comment="" />
+      <created>1692250935170</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1693189703760</updated>
-      <workItem from="1693189708041" duration="84000" />
-      <workItem from="1693189802442" duration="73000" />
-      <workItem from="1693192116457" duration="370000" />
-      <workItem from="1693901923170" duration="17000" />
-      <workItem from="1693974874114" duration="2577000" />
-      <workItem from="1693997306764" duration="20000" />
-      <workItem from="1693997340171" duration="8356000" />
-      <workItem from="1694006505142" duration="18000" />
-      <workItem from="1694006533490" duration="3044000" />
-      <workItem from="1694170491540" duration="17000" />
-      <workItem from="1694170521797" duration="4665000" />
-      <workItem from="1694175220512" duration="641000" />
-      <workItem from="1694182508873" duration="520000" />
-      <workItem from="1694429097039" duration="12703000" />
-      <workItem from="1694601817580" duration="41000" />
-      <workItem from="1694601872850" duration="178000" />
+      <updated>1692250935170</updated>
+      <workItem from="1692250936205" duration="114000" />
+      <workItem from="1692251068340" duration="156000" />
+      <workItem from="1692260616528" duration="2162000" />
+      <workItem from="1692263355402" duration="239000" />
+      <workItem from="1692344474059" duration="1366000" />
+      <workItem from="1692345855824" duration="27000" />
+      <workItem from="1692614802971" duration="21000" />
+<<<<<<< HEAD
+      <workItem from="1692614836043" duration="12313000" />
+      <workItem from="1692787940994" duration="15000" />
+=======
+      <workItem from="1692614836043" duration="11446000" />
+      <workItem from="1692672880601" duration="56000" />
+      <workItem from="1692672947824" duration="848000" />
+      <workItem from="1692673812238" duration="192000" />
+      <workItem from="1692692482823" duration="14000" />
+      <workItem from="1692755791829" duration="22000" />
+      <workItem from="1692759604385" duration="2041000" />
+      <workItem from="1692761729769" duration="2196000" />
+>>>>>>> 510cdc7b1c53166fe7dc48291ec3043d350dfc99
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

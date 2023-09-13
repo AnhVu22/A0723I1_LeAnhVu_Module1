@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case study - Task 2 - Bài 2</title>
+</head>
+<body>
+<h1>Kiểm tra kí tự là nguyên âm hay phụ âm</h1>
+
+<script>
+    let str = prompt("Nhập một kí tự bất kỳ: ");
+    let nguyenAm = "aeiouAEIOU";
+    for (let i = 0; i < str.length; i++) {
+        if (nguyenAm.indexOf(str[i]) !== -1 && typeof str[i] === "string") {
+            alert("Kí tự nhập vào là nguyên âm");
+        } else {
+            alert("Kí tự nhập vào là phụ âm");
+        }
+    }
+</script>
+
+</body>
+</html>
