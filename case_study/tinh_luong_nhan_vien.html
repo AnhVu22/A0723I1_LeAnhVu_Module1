@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case study - Task 1 - Bài 1</title>
+</head>
+<body>
+<h1> Tính lương nhân viên </h1>
+<table>
+    <tr>
+        <td><label for="salary">Lương nhân viên:</label>
+            <input type="number" id="salary" placeholder="Nhập tiền lương nhân viên">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="calSalary()">Tính lương</button>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function calSalary() {
+        let salary = parseInt(document.getElementById("salary").value);
+        let tax;
+        let salaryAfter;
+        switch (salary) {
+            case salary >= 15000000:
+                tax = salary * 0.2;
+                salaryAfter = salary - tax;
+                document.getElementById("result").innerHTML = "Số lương thực nhận là: " + salaryAfter + "VNĐ";
+                break;
+            case 15000000 > salary >= 7000000:
+                tax = salary * 0.1;
+                salaryAfter = salary - tax;
+                document.getElementById("result").innerHTML = "Số lương thực nhận là: " + salaryAfter + "VNĐ";
+                break;
+            default:
+                tax = salary * 0.05;
+                salaryAfter = salary - tax;
+                document.getElementById("result").innerHTML = "Số lương thực nhận là: " + salaryAfter + "VNĐ";
+        }
+    }
+</script>
+
+</body>
+</html>
