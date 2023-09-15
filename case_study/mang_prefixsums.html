@@ -8,8 +8,22 @@
 <body>
 
 <script>
-    let arrA = new Array();
-    let arrB = new Array();
+    function prefixSum(arrA, arrB) {
+        arrB[0] = arrA[0];
+        for (let i = 1; i < arrA.length; i++) {
+            arrB[i] = arrB[i - 1] + arrA[i];
+        }
+        document.write("Mảng B được tạo ra: " + arrB.join(" "));
+    }
+    let arrA = [];
+    let lengthA = parseInt(prompt('nhập độ dài mảng'));
+    for (let i = 0; i < lengthA; i++) {
+        let num = parseInt(prompt('nhập phần tử mảng'));
+        arrA.push(num);
+    }
+    let arrB = new Array(arrA.length);
+    prefixSum(arrA, arrB);
+
 </script>
 
 </body>
