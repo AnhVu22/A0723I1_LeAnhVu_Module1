@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study - Task 3 - Bài 3</title>
+</head>
+<body>
+<h1>Max Fraction</h1>
+
+<script>
+    function maxFraction(numerators, denominators) {
+        let maxIndex = 0;
+        let max = numerators[0] / denominators[0];
+        for (let i = 0; i < numerators.length; i++) {
+            if (numerators[i] / denominators[i] > max) {
+                max = numerators[i]/ denominators[i];
+                maxIndex = i;
+            }
+        }
+        alert("Max Fraction index: " + maxIndex);
+    }
+    let numerators = [];
+    let lengthNume = parseInt(prompt("Nhập số lượng tử số: "));
+    for (let i = 0; i < lengthNume; i++) {
+        let num = parseInt(prompt("Nhập tử số cần tạo : " ));
+        numerators.push(num);
+    }
+    let denominators = [];
+    let lengthDeno = parseInt(prompt("Nhập số lượng mẫu số: "));
+    for (let i = 0; i < lengthDeno; i++) {
+        let num = parseInt(prompt("Nhập mẫu số cần tạo: "));
+        denominators.push(num);
+    }
+    maxFraction(numerators, denominators);
+</script>
+</body>
+</html>

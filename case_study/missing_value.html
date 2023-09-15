@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study - Task 3 - Bài 2</title>
+</head>
+<body>
+<h1>Missing Value</h1>
+
+<script>
+    function missingValue (arrA, arrB) {
+        arrA.sort();
+        arrB.sort();
+        for (let i = 0; i < arrA.length; i++) {
+            for (let j = 0; j < arrB.length; j++) {
+                if (arrA[i] === arrB[j]) {
+                    arrB.splice(j, 1);
+                }
+            }
+        }
+        alert("missingValue(A,B) = " + arrB);
+    }
+
+    let arrA = [];
+    let lengthA = parseInt(prompt('nhập độ dài mảng A: '));
+    for (let i = 0; i < lengthA; i++) {
+        let num = parseInt(prompt('Nhập phần tử mảng A thứ: ' + (i + 1)));
+        arrA.push(num);
+    }
+    let arrB = [];
+    let lengthB = parseInt(prompt('nhập độ dài mảng B: '));
+    for (let i = 0; i < lengthB; i++) {
+        let num = parseInt(prompt('Nhập phần tử mảng B thứ: ' + (i + 1)));
+        arrB.push(num);
+    }
+    missingValue(arrA, arrB);
+</script>
+
+</body>
+</html>
