@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lập trình hướng đối tượng</title>
+</head>
+<body>
+<h1>Rectangle Description</h1>
+<canvas id="myCanvas" width="100" height="50" style="border:1px solid #d3d3d3;"></canvas>
+<br>
+<script>
+    class Rectangle {
+        constructor(length, width, x, y) {
+            this.length = length;
+            this.width = width;
+            this.x = x;
+            this.y = y;
+        }
+        getArea() {
+            return this.length * this.width;
+        }
+        getPerimeter() {
+            return 2 * (this.length + this.width);
+        }
+        getCanvas() {
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#fa4b2a";
+            ctx.fillRect(this.x, this.y, this.length, this.width);
+        }
+    }
+    let length = parseInt(prompt("Nhập chiều dài (m): "));
+    let width = parseInt(prompt("Nhập chiều rộng (m): "));
+    let x = parseInt(prompt("Nhập tọa độ x để vẽ hình: "));
+    let y = parseInt(prompt("Nhập tọa độ y để vẽ hinh: "));
+    let rectangle = new Rectangle(length,width,x,y);
+    document.write("Diện tích hình chữ nhật: " + rectangle.getArea() + " m2 <br>");
+    document.write("Chu vi hình chữ nhật: " + rectangle.getPerimeter() + " m");
+    rectangle.getCanvas();
+</script>
+
+</body>
+</html>
