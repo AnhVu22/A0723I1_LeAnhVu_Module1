@@ -16,32 +16,32 @@
     <tr>
         <th style="background-color: cornflowerblue">1</th>
         <td>Cafe</td>
-        <td><input type="checkbox" value="Cafe" onchange="run(this.value)"> </td>
+        <td><input type="checkbox" value="Cafe" onchange="order(this.value)"> </td>
     </tr>
     <tr>
         <th style="background-color: cornflowerblue">2</th>
         <td>Cam vắt</td>
-        <td><input type="checkbox" value="Cam vắt" onclick="run(this.value)"> </td>
+        <td><input type="checkbox" value="Cam vắt" onclick="order(this.value)"> </td>
     </tr>
     <tr>
         <th style="background-color: cornflowerblue">3</th>
         <td>Nước ép cà rốt</td>
-        <td><input type="checkbox" value="Nước ép cà rốt" onclick="run(this.value)"> </td>
+        <td><input type="checkbox" value="Nước ép cà rốt" onclick="order(this.value)"> </td>
     </tr>
     <tr>
         <th style="background-color: cornflowerblue">4</th>
         <td>Nước ép cà chua</td>
-        <td><input type="checkbox" value="Nước ép cà chua" onclick="run(this.value)"> </td>
+        <td><input type="checkbox" value="Nước ép cà chua" onclick="order(this.value)"> </td>
     </tr>
     <tr>
         <th style="background-color: cornflowerblue">5</th>
         <td>Nước lọc</td>
-        <td><input type="checkbox" value="Nước lọc" onclick="run(this.value)"> </td>
+        <td><input type="checkbox" value="Nước lọc" onclick="order(this.value)"> </td>
     </tr>
     <tr>
         <th style="background-color: cornflowerblue">6</th>
         <td>Nước dừa</td>
-        <td><input type="checkbox" value="Nước dừa" onclick="run(this.value)"> </td>
+        <td><input type="checkbox" value="Nước dừa" onclick="order(this.value)"> </td>
     </tr>
 </table>
 <br>
@@ -51,10 +51,12 @@
         let drink = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
         let price = ["15000", "30000", "50000", "50000","5000","60000"];
         let total = 0;
-        function run(value) {
+        function order(value) {
             for (let i = 0; i < drink.length; i++) {
                 if (value === drink[i]) {
-                    let amount = parseInt(prompt("Bạn vừa chọn: " + drink[i] + " Đơn giá là: " + price[i] +"đ." +" Vui lòng nhập số lượng muốn đặt"));
+                    alert("Bạn vùa chọn: " + drink[i]);
+                    alert("Đơn giá " + drink[i] + " là " + price[i] + " VNĐ");
+                    let amount = parseInt(prompt("Vui lòng nhập số lượng muốn đặt:"));
                     total += amount*price[i];
                     break;
                 }
@@ -62,7 +64,6 @@
         }
         function sum() {
             alert("Tổng số tiền cần thanh toán là: " + total + "đ");
-            total = 0;
         }
 
 </script>
