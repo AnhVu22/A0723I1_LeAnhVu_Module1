@@ -8,15 +8,31 @@
 <h1>Kiểm tra kí tự là nguyên âm hay phụ âm</h1>
 
 <script>
-    let str = prompt("Nhập một kí tự bất kỳ: ");
-    let nguyenAm = "aeiouAEIOU";
-    for (let i = 0; i < str.length; i++) {
-        if (nguyenAm.indexOf(str[i]) !== -1 && typeof str[i] === "string") {
-            alert("Kí tự nhập vào là nguyên âm");
-        } else {
-            alert("Kí tự nhập vào là phụ âm");
+    function isVowel(str) {
+        if (isNaN(str)) {
+            switch (str) {
+                case "i":
+                case "o":
+                case "u":
+                case "a":
+                case "e":
+                case "I":
+                case "O":
+                case "U":
+                case "A":
+                case "E":
+                    alert("Kí tự cần kiểm tra là nguyên âm");
+                    break;
+                default: alert("Kí tự cần kiểm tra là phụ âm");
+                }
+            } else {
+            alert("Vui lòng không nhập số");
+            }
         }
-    }
+
+    let str = prompt("Nhập một kí tự bất kỳ: ");
+    isVowel(str);
+
 </script>
 
 </body>
