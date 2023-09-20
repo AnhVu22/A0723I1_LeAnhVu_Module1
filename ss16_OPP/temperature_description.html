@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lập trình hướng đối tượng</title>
+</head>
+<body>
+
+<script>
+    class Temperature {
+        constructor(degreeC) {
+            this.degreeC = degreeC;
+        }
+
+        convertCtoF() {
+            return this.degreeC * 1.8 + 32;
+        }
+        convertCtoK() {
+            return this.degreeC + 273.15;
+        }
+    }
+    let temperature = new Temperature(25);
+    document.write("Độ C là: " + temperature.degreeC + "&#176C <br>");
+    document.write("Độ F là: " + temperature.convertCtoF() + "&#176F <br>");
+    document.write("Độ K là: " + temperature.convertCtoK() + "&#176K");
+</script>
+
+</body>
+</html>
