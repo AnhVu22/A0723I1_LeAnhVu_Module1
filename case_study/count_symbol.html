@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study - Task 4 - Bài 2</title>
+</head>
+<body>
+
+<script>
+    function countSymbols(str) {
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            arr[i] = str[i].toLowerCase();
+        }
+        arr.sort();
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[i + 1] ) {
+                continue;
+            } else {
+                count += 1;
+            }
+        } alert("Số ký tự khác nhau trong chuỗi: " + count);
+    }
+    let str = prompt("Nhập một chuỗi kí tự bất kỳ: ");
+    countSymbols(str);
+</script>
+</body>
+</html>
