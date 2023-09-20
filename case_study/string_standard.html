@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study - Task 4 - Bài 1</title>
+</head>
+<body>
+<h1>Chuẩn hóa String</h1>
+
+<script>
+    function titleCase(str) {
+        let arr = str.toLowerCase().split(" ");
+        let result = arr.map(function (item) {
+                return item.replace(item.charAt(0), item.charAt(0).toUpperCase())
+            });
+        return document.write("Chuỗi đã chuẩn hóa: " + result.join(" "));
+        }
+    function 
+        let str = prompt("Nhập một chuỗi kí tự bất kỳ: ");
+    titleCase(str);
+</script>
+
+</body>
+</html>
