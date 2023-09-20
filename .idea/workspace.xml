@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebdb1110-ac84-4336-906e-66cd9b6cf0c0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false"/>
-<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/case_study/order_drink.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/order_drink.html" afterDir="false" />
-=======
->>>>>>> a0fbde432ca2782d9289aac9ff3a02236a4e6cf6
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +63,11 @@
       <updated>1694775130484</updated>
       <workItem from="1694775135992" duration="25000" />
       <workItem from="1694775203399" duration="60000" />
-<<<<<<< HEAD
       <workItem from="1694775342478" duration="6021000" />
-=======
       <workItem from="1694775342478" duration="5591000" />
       <workItem from="1694929552913" duration="19000" />
       <workItem from="1694929577861" duration="1704000" />
       <workItem from="1694932805319" duration="2694000" />
->>>>>>> a0fbde432ca2782d9289aac9ff3a02236a4e6cf6
     </task>
     <servers />
   </component>
