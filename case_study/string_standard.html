@@ -6,21 +6,31 @@
 </head>
 <body>
 <h1>Chuẩn hóa String</h1>
-
+<p id="string"></p>
+<button onclick="titleCase(str)">Title Case</button>
+<p id="title"></p>
+<button onclick="longestWord(str)">Longest Word</button>
+<p id="longest"></p>
 <script>
     function titleCase(str) {
         let arr = str.toLowerCase().split(" ");
         let result = arr.map(function (item) {
                 return item.replace(item.charAt(0), item.charAt(0).toUpperCase())
             });
-        return document.write("Chuỗi đã chuẩn hóa: " + result.join(" "));
+        return document.getElementById("title").innerHTML= "Chuỗi đã chuẩn hóa: " + result.join(" ");
         }
-    function longestLetter(str) {
-        let arr = [];
+    function longestWord(str) {
+        let arr = str.toLowerCase().split(" ");
+        let maxLength = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].length > maxLength) {
+                maxLength = arr[i].length;
+            }
+        }
+        return document.getElementById("longest").innerHTML= "Từ dài nhất trong chuỗi: " + maxLength;
     }   
     let str = prompt("Nhập một chuỗi kí tự bất kỳ: ");
-    titleCase(str);
-    longestLetter(str);
+    document.getElementById("string").innerText = "Chuỗi kí tự nhập vào: " + str;
 </script>
 
 </body>
