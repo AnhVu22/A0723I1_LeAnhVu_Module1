@@ -9,15 +9,19 @@
 <script>
     class Mobile  {
         constructor (battery, draftMess, inboxMess, sentMess, status) {
-            this.battery = battery;
+            this.battery = 100;
             this.draftMess = draftMess;
             this.inboxMess = inboxMess;
             this.sentMess = sentMess;
             this.status = status;
         }
-        onOff() {
-
-    }
+        statusCheck() {
+            this.status = "";
+        }
+        composeMess(message) {
+            this.battery--;
+            this.draftMessage = message;
+        }
     }
 </script>
 

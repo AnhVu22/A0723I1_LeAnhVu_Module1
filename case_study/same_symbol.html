@@ -7,7 +7,30 @@
 <body>
 
 <script>
-    
+    function sameSymbols (strA, strB) {
+        arrA = strA.toLowerCase().sort();
+        arrB = strB.toLowerCase().sort();
+        let count = 0;
+        for (let i = 0; i < arrA.length; i++) {
+            if (arrA[i] === arrA[i + 1]) {
+                count += 1;
+            }
+        }
+    }
+    let strA = [];
+    let lengthA = parseInt(prompt("Nhập độ dài mảng A: "));
+    for (let i = 0; i < lengthA; i++) {
+        let num = parseInt(prompt("Nhập phần tử thứ: " + (i + 1) + " của mảng A"));
+        strA.push(num);
+    }
+    let strB = [];
+    let lengthB = parseInt(prompt("Nhập độ dài mảng B: "));
+    for (let i = 0; i < lengthB; i++) {
+        let num = parseInt(prompt("Nhập phần tử thứ: " + (i + 1) + " của mảng B"));
+        strB.push(num);
+    }
+    sameSymbols(arrA, arrB);
+
 </script>
 
 </body>
