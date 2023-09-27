@@ -7,6 +7,7 @@
     <list default="true" id="ebdb1110-ac84-4336-906e-66cd9b6cf0c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/string_standard.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/string_standard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_OPP/mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_OPP/mobile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +54,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -74,7 +78,11 @@
       <workItem from="1695202553221" duration="18000" />
       <workItem from="1695202587262" duration="3709000" />
       <workItem from="1695206873025" duration="6697000" />
-      <workItem from="1695349179163" duration="784000" />
+      <workItem from="1695349179163" duration="942000" />
+      <workItem from="1695350183890" duration="43000" />
+      <workItem from="1695350262165" duration="161000" />
+      <workItem from="1695783802815" duration="2801000" />
+      <workItem from="1695786651416" duration="942000" />
     </task>
     <servers />
   </component>

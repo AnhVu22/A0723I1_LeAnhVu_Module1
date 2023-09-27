@@ -5,24 +5,121 @@
     <title>Lâp trình hướng đối tượng</title>
 </head>
 <body>
+<h1>Nokia Phone</h1>
+<button id="nokiaOnButton" onclick="nokia.turnOn()">Turn On</button>
+<button id="nokiaOffButton" onclick="nokia.turnOff()">Turn Off</button>
+<button id="nokiaChargeButton" onclick="nokia.charge()">Charge</button>
+<div>
+    <input type="text" id="nokiaCompose" placeholder="Compose a message">
+    <button onclick="nokia.composeMessage('nokiaCompose'); nokia.sendMessage(iphone);iphone.viewInbox('iphoneInbox')">
+        Send
+    </button>
+</div>
+<br>
+<div id="nokiaInbox">
+    <textarea placeholder="Inbox"></textarea>
+</div>
 
+<h1>iPhone</h1>
+<button id="iphoneOnButton">Turn On</button>
+<button id="iphoneOffButton">Turn Off</button>
+<button id="iphoneChargeButton">Charge</button>
+<div>
+    <input type="text" id="iphoneCompose" placeholder="Compose a message">
+    <button onclick="iphone.composeMessage('iphoneCompose'); iphone.sendMessage(nokia);nokia.viewInbox('nokiaInbox')">
+        Send
+    </button>
+</div>
+<br>
+<div id="iphoneInbox">
+    <textarea placeholder="Inbox"></textarea>
+</div>
 <script>
-    class Mobile  {
-        constructor (battery, draftMess, inboxMess, sentMess, status) {
-            this.battery = 100;
-            this.draftMess = draftMess;
-            this.inboxMess = inboxMess;
-            this.sentMess = sentMess;
-            this.status = status;
+    class Mobile {
+        constructor(phone) {
+            this.phone = phone;
+            this.batteryStatus = 100;
+            this.isOn = false;
+            this.draftMess = [];
+            this.inboxMess = [];
+            this.sentMess = [];
         }
-        statusCheck() {
-            this.status = "";
+
+        checkPower() {
+            return this.batteryStatus > 0;
         }
-        composeMess(message) {
-            this.battery--;
-            this.draftMessage = message;
+
+        turnOn() {
+            if (!this.isOn) {
+                this.isOn = true;
+                this.batteryStatus--;
+            }
+        }
+
+        turnOff() {
+            if (this.isOn) {
+                this.isOn = false;
+                this.batteryStatus--;
+            }
+        }
+
+        charge() {
+            if (this.isOn && this.batteryStatus < 100) {
+                this.batteryStatus = Math.min(100, this.batteryStatus + 1);
+                this.batteryStatus--;
+            }
+        }
+
+        composeMessage(message) {
+            if (this.isOn) {
+                this.draftMess.push(message);
+                this.batteryStatus--;
+            }
+        }
+
+        receiveMessage(message) {
+            if (this.isOn) {
+                this.inboxMess.push(message);
+                this.batteryStatus--;
+            }
+        }
+
+        sendMessage(otherPhone, message) {
+            if (this.isOn && otherPhone.isOn) {
+                otherPhone.receiveMessage(message);
+                this.sentMess.push(message);
+                this.batteryStatus--;
+            }
+        }
+
+        viewInbox() {
+            if (this.isOn) {
+                return this.inboxMess;
+            }
+        }
+
+        viewSentMessages() {
+            if (this.isOn) {
+                return this.sentMessages;
+            }
         }
     }
+
+    // Onoff phone
+    function turnOn(phone) {
+        phone.turnOn();
+    }
+
+    function turnOff(phone) {
+        phone.turnOff();
+    }
+
+
+    // Create Nokia and iPhone
+    const nokia = new Mobile("Nokia");
+    const iphone = new Mobile("iPhone");
+
+
 </script>
 
 </body>
