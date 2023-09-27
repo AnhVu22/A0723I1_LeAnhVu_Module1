@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study - Bài 5 - Task 2</title>
+</head>
+<body>
+
+<script>
+    function isPrime(num) {
+        if (num < 2 || isNaN(num)) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    function inputMatrix(m, n) {
+        for (let i = 0; i < m; i++) {
+            let row = [];
+            for (let j = 0; j < n; j++) {
+                let value = parseInt(prompt("Nhập giá trị cho phần tử [" + i + "][" + j + "]:"));
+                row.push(value);
+            }
+            matrix.push(row);
+        }
+        return matrix;
+    }
+
+    function listAndCountPrime(matrix) {
+        let primeCount = 0;
+        let primes = [];
+        for (let i = 0; i < matrix.length; i++) {
+            for (let j = 0; j < matrix[i].length; j++) {
+                if (isPrime(matrix[i][j])) {
+                    primeCount++;
+                    primes.push(matrix[i][j]);
+                }
+            }
+        }
+        return {
+            primeCount: primeCount,
+            primes: primes,
+        }
+    }
+
+    let m = parseInt(prompt("Nhập số hàng (m):"));
+    let n = parseInt(prompt("Nhập số cột (n):"));
+    let matrix = [];
+    inputMatrix(m, n);
+    alert("Số lượng số nguyên tố trong mảng là: " + listAndCountPrime(matrix).primeCount);
+    alert("Các số nguyên tố trong mảng là: " + listAndCountPrime(matrix).primes.join(", "));
+
+</script>
+
+</body>
+</html>
