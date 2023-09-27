@@ -7,30 +7,30 @@
 <body>
 
 <script>
-    function sameSymbols (strA, strB) {
-        arrA = strA.toLowerCase().sort();
-        arrB = strB.toLowerCase().sort();
-        let count = 0;
+    function commonCharacterCount(strA, strB) {
+        const arrA = strA.split("");
+        const arrB = strB.split("");
+        console.log(arrA);
+        console.log(arrB);
+        let commonCount = 0;
         for (let i = 0; i < arrA.length; i++) {
-            if (arrA[i] === arrA[i + 1]) {
-                count += 1;
+            let index = arrA[i];
+            for (let j = 0; j < arrB.length; j++) {
+                if (arrB[j] === index) {
+                    commonCount++;
+                    arrB[j] = null;
+                    break;
+                }
             }
         }
+        return commonCount;
     }
-    let strA = [];
-    let lengthA = parseInt(prompt("Nhập độ dài mảng A: "));
-    for (let i = 0; i < lengthA; i++) {
-        let num = parseInt(prompt("Nhập phần tử thứ: " + (i + 1) + " của mảng A"));
-        strA.push(num);
-    }
-    let strB = [];
-    let lengthB = parseInt(prompt("Nhập độ dài mảng B: "));
-    for (let i = 0; i < lengthB; i++) {
-        let num = parseInt(prompt("Nhập phần tử thứ: " + (i + 1) + " của mảng B"));
-        strB.push(num);
-    }
-    sameSymbols(arrA, arrB);
 
+
+    let strA = prompt("Nhập vào dãy A: ");
+    let strB = prompt("Nhập vào dãy B: ");
+    let result = commonCharacterCount(strA, strB);
+    alert("Số ký tự chung là: " + result);
 </script>
 
 </body>
