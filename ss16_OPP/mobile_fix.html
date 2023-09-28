@@ -41,8 +41,8 @@
 <div class="phone-container">
     <div class="phone" id="nokia">
         <h2>Nokia Phone</h2>
-        <p class="phone-status">Status: Off</p>
-        <p class="phone-status">Battery: 100</p>
+        <p class="phone-status" id="nokiaStatus"></p>
+        <p class="phone-status" id="nokiaBattery"></p>
         <button class="phone-buttons" id="nokiaToggle">Toggle On/Off</button>
         <button class="phone-buttons" id="nokiaClearInbox">Clear Inbox</button>
         <button class="phone-buttons"
@@ -58,8 +58,8 @@
 
     <div class="phone" id="iphone">
         <h2>iPhone</h2>
-        <p class="phone-status">Status: Off</p>
-        <p class="phone-status">Battery: 100</p>
+        <p class="phone-status" id="iphoneStatus"></p>
+        <p class="phone-status" id="iphoneBattery"></p>
         <button class="phone-buttons" id="iphoneToggle">Toggle On/Off</button>
         <button class="phone-buttons" id="iphoneClearInbox">Clear Inbox</button>
         <div class="inbox" id="iphoneInbox">
@@ -75,55 +75,95 @@
 
 <script>
     class Mobile {
-        constructor(brand) {
-            this.brand = brand;
-            this.battery = Math.floor(Math.random() * 100);
-            this.status = false;
-            this.draftMess = draftMess;
-            this.inboxMess = inboxMess;
-            this.sentMess = sentMess;
-        }
-
-        turnOnOff(brand) {
-            if (!this.status) {
-                this.status = true;
-                this.battery--;
-            } else {
-                this.status = false;
-                this.battery--;
-            }
-        }
-
-        charge(brand) {
+        constructor() {
             this.battery = 100;
+            this.drafts = [];
+            this.inbox = [];
+            this.sent = [];
+            this.isOn = false;
         }
 
-        draftMess(message) {
-            if (this.status) {
-                this.draftMess() += message;
+        checkBattery() {
+            return this.battery;
+        }
+
+        turnOn() {
+            if (!this.isOn) {
+                this.isOn = true;
                 this.battery--;
             }
         }
 
-    }
+        turnOff() {
+            if (this.isOn) {
+                this.isOn = false;
+                this.battery--;
+            }
+        }
 
-    //Function
-    function turnOnOff(brand) {
-        if (brand === "nokia") {
-            nokia.turnOnOff(brand);
-        } else if (brand === "iphone") {
-            iphone.turnOnOff(brand);
+        onOffCheck() {
+            return this.isOn;
+        }
+
+        charge() {
+            if (this.battery < 100) {
+                this.battery++;
+            }
+        }
+
+        composeMessage(message) {
+            if (this.isOn) {
+                this.drafts.push(message);
+                this.battery--;
+            }
+        }
+
+        receiveMessage(message) {
+            if (this.isOn) {
+                this.inbox.push(message);
+                this.battery--;
+            }
+        }
+
+        sendMessage(message, mobile) {
+            if (this.isOn && mobile.isOn) {
+                this.sent.push(message);
+                mobile.receiveMessage(message);
+                this.battery--;
+            }
+        }
+
+        viewInbox() {
+            if (this.isOn) {
+                return this.inbox;
+            }
+        }
+
+        viewSent() {
+            if (this.isOn) {
+                return this.sent;
+            }
         }
     }
 
-    function composeMess() {
-        let message = document.getElementById("nokiaCompose");
+    function statusCheck(mobile) {
+        let onOff = "";
+        if (mobile !== false) {
+            onOff += "ON";
+        } else {
+            onOff += "OFF";
+        }
+        console.log(onOff);
     }
 
-
-    // Create Nokia and iPhone
-    let nokia = new Mobile("Nokia");
-    let iphone = new Mobile("iPhone");
+    const nokia = new Mobile("Nokia");
+    const iphone = new Mobile("iPhone");
+    nokia.turnOn();
+    document.getElementById("nokiaBattery").innerHTML = "Battery: " + nokia.checkBattery();
+    document.getElementById("iphoneBattery").innerHTML = "Battery: " + iphone.checkBattery();
+    document.getElementById("nokiaStatus").innerHTML = "Status: " + statusCheck(nokia.onOffCheck());
+    document.getElementById("iphoneStatus").innerHTML = "Status: " + statusCheck(iphone.onOffCheck())
+    console.log(statusCheck(nokia.onOffCheck()));
 
 </script>
 
