@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .phone-container {
+        display: flex;
+    }
+
+    .phone {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        width: 300px;
+    }
+
+    .phone h2 {
+        margin-top: 0;
+    }
+
+    .phone-status {
+        font-weight: bold;
+    }
+
+    .phone-buttons {
+        margin-top: 10px;
+    }
+
+    .inbox {
+        margin-top: 20px;
+    }
+</style>
+<body>
+<div class="phone-container">
+    <div class="phone" id="nokia">
+        <h2>Nokia Phone</h2>
+        <p class="phone-status">Status: Off</p>
+        <p class="phone-status">Battery: 100</p>
+        <button class="phone-buttons" id="nokiaToggle">Toggle On/Off</button>
+        <button class="phone-buttons" id="nokiaClearInbox">Clear Inbox</button>
+        <button class="phone-buttons"
+                onclick="iphone.message('iphone');iphone.send(nokia);nokia.viewInbox('nokiaDisplay')">Send
+        </button>
+        <div class="inbox" id="nokiaInbox"><textarea>
+
+        </textarea>
+        </div>
+        <div class="inbox" id="nokiaDrafts"></div>
+        <div class="inbox" id="nokiaSent"></div>
+    </div>
+
+    <div class="phone" id="iphone">
+        <h2>iPhone</h2>
+        <p class="phone-status">Status: Off</p>
+        <p class="phone-status">Battery: 100</p>
+        <button class="phone-buttons" id="iphoneToggle">Toggle On/Off</button>
+        <button class="phone-buttons" id="iphoneClearInbox">Clear Inbox</button>
+        <div class="inbox" id="iphoneInbox">
+            <textarea>
+
+            </textarea>
+        </div>
+        <div class="inbox" id="iphoneDrafts"></div>
+        <div class="inbox" id="iphoneSent"></div>
+    </div>
+</div>
+
+
+<script>
+    class Mobile {
+        constructor(brand) {
+            this.brand = brand;
+            this.battery = Math.floor(Math.random() * 100);
+            this.status = false;
+            this.draftMess = draftMess;
+            this.inboxMess = inboxMess;
+            this.sentMess = sentMess;
+        }
+
+        turnOnOff(brand) {
+            if (!this.status) {
+                this.status = true;
+                this.battery--;
+            } else {
+                this.status = false;
+                this.battery--;
+            }
+        }
+
+        charge(brand) {
+            this.battery = 100;
+        }
+
+        draftMess(message) {
+            if (this.status) {
+                this.draftMess() += message;
+                this.battery--;
+            }
+        }
+
+    }
+
+    //Function
+    function turnOnOff(brand) {
+        if (brand === "nokia") {
+            nokia.turnOnOff(brand);
+        } else if (brand === "iphone") {
+            iphone.turnOnOff(brand);
+        }
+    }
+
+    function composeMess() {
+        let message = document.getElementById("nokiaCompose");
+    }
+
+
+    // Create Nokia and iPhone
+    let nokia = new Mobile("Nokia");
+    let iphone = new Mobile("iPhone");
+
+</script>
+
+</body>
+</html>
