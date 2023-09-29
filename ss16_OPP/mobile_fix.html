@@ -43,7 +43,7 @@
         <h2>Nokia Phone</h2>
         <p class="phone-status" id="nokiaStatus"></p>
         <p class="phone-status" id="nokiaBattery"></p>
-        <button class="phone-buttons" id="nokiaToggle">Toggle On/Off</button>
+        <button class="phone-buttons" id="nokiaToggle" onclick="toggle()">Toggle On/Off</button>
         <button class="phone-buttons" id="nokiaClearInbox">Clear Inbox</button>
         <button class="phone-buttons"
                 onclick="iphone.message('iphone');iphone.send(nokia);nokia.viewInbox('nokiaDisplay')">Send
@@ -60,7 +60,7 @@
         <h2>iPhone</h2>
         <p class="phone-status" id="iphoneStatus"></p>
         <p class="phone-status" id="iphoneBattery"></p>
-        <button class="phone-buttons" id="iphoneToggle">Toggle On/Off</button>
+        <button class="phone-buttons" id="iphoneToggle" onclick="toggle()">Toggle On/Off</button>
         <button class="phone-buttons" id="iphoneClearInbox">Clear Inbox</button>
         <div class="inbox" id="iphoneInbox">
             <textarea>
@@ -87,15 +87,11 @@
             return this.battery;
         }
 
-        turnOn() {
+        turnOnOff() {
             if (!this.isOn) {
                 this.isOn = true;
                 this.battery--;
-            }
-        }
-
-        turnOff() {
-            if (this.isOn) {
+            } else {
                 this.isOn = false;
                 this.battery--;
             }
@@ -146,19 +142,17 @@
         }
     }
 
-    function statusCheck(mobile) {
-        let onOff = "";
-        if (mobile !== false) {
-            onOff += "ON";
-        } else {
-            onOff += "OFF";
-        }
-        console.log(onOff);
+    function statusCheck(mobile,) {
+
+    }
+
+    function toggle(mobile) {
+
     }
 
     const nokia = new Mobile("Nokia");
     const iphone = new Mobile("iPhone");
-    nokia.turnOn();
+    nokia.turnOnOff();
     document.getElementById("nokiaBattery").innerHTML = "Battery: " + nokia.checkBattery();
     document.getElementById("iphoneBattery").innerHTML = "Battery: " + iphone.checkBattery();
     document.getElementById("nokiaStatus").innerHTML = "Status: " + statusCheck(nokia.onOffCheck());
