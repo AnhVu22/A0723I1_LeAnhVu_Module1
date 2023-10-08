@@ -2,24 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case Study - Bài 5 - Task 2</title>
+    <title>Case study - Task 5 - Bài 3</title>
 </head>
+<h1>Tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều</h1>
 <body>
 
 <script>
-    function isPrime(num) {
-        if (num < 2 || isNaN(num)) {
-            return false;
-        } else {
-            for (let i = 2; i <= Math.sqrt(num); i++) {
-                if (num % i === 0) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
     function inputMatrix(m, n) {
         for (let i = 0; i < m; i++) {
             let row = [];
@@ -32,20 +20,23 @@
         return matrix;
     }
 
-    function listAndCountPrime(matrix) {
-        let primeCount = 0;
-        let primes = [];
+    function findMinMaxInArray(matrix) {
+        let minValue = matrix[0][0];
+        let maxValue = matrix[0][0];
         for (let i = 0; i < matrix.length; i++) {
             for (let j = 0; j < matrix[i].length; j++) {
-                if (isPrime(matrix[i][j])) {
-                    primeCount++;
-                    primes.push(matrix[i][j]);
+                if (matrix[i][j] < minValue) {
+                    minValue = matrix[i][j];
+                }
+                if (matrix[i][j] > maxValue) {
+                    maxValue = matrix[i][j];
                 }
             }
         }
         return {
-            primeCount: primeCount,
-            prime: prime,
+            // Đây là trả về một đối tượng chứa nhiều giá trị dưới dạng thuộc tính
+            min: minValue,
+            max: maxValue,
         }
     }
 
@@ -54,8 +45,8 @@
     let n = parseInt(prompt("Nhập số cột (n):"));
     let matrix = [];
     inputMatrix(m, n);
-    alert("Số lượng số nguyên tố trong mảng là: " + listAndCountPrime(matrix).primeCount);
-    alert("Các số nguyên tố trong mảng là: " + listAndCountPrime(matrix).prime.join(", "));
+    alert("Minimum value: " + findMinMaxInArray(matrix).min);
+    alert("Maximum value: " + findMinMaxInArray(matrix).max);
 
 </script>
 
