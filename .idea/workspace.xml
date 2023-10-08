@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ebdb1110-ac84-4336-906e-66cd9b6cf0c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/max_min_in_array.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/max_min_in_array.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/manager_student_codegym.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/manager_student_codegym.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/same_symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/same_symbol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss05_form_table/taoformlaysurveykhachhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss05_form_table/taoformlaysurveykhachhang.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -53,7 +56,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -93,6 +96,13 @@
       <workItem from="1695974238903" duration="2088000" />
       <workItem from="1696230278778" duration="1350000" />
       <workItem from="1696231983322" duration="455000" />
+      <workItem from="1696248450783" duration="310000" />
+      <workItem from="1696347557637" duration="2062000" />
+      <workItem from="1696417902478" duration="550000" />
+      <workItem from="1696418466267" duration="5826000" />
+      <workItem from="1696428920868" duration="426000" />
+      <workItem from="1696589401413" duration="2735000" />
+      <workItem from="1696593516989" duration="877000" />
     </task>
     <servers />
   </component>

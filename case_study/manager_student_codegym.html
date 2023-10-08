@@ -5,14 +5,87 @@
     <title>Case Study - Task 6</title>
 
     <style>
-        
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
 <h1>Hệ thống quản lý học viên Codegym</h1>
 <body>
+<button id="addNew" onclick="addNew()">Thêm mới học viên</button>
+<button id="eđitData" onclick="editData()">Sửa thông tin học viên</button>
+<button id="delData" onclick="delData()">Xóa học viên</button>
 
-
+<h2>Danh sách học viên</h2>
+<table>
+    <tr>
+        <th>Mã học viên</th>
+        <th>Họ Tên</th>
+        <th>Lớp</th>
+        <th>Email</th>
+        <th>Ngày sinh</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 <script>
+    class CodegymStudent {
+        constructor(id, name, className, email, birth, module) {
+            this.STT = id;
+            this.name = name;
+            this.className = className;
+            this.email = email;
+            this.birth = birth;
+            this.module = module;
+        }
+
+        addName(newName) {
+            return this.name = newName;
+        }
+
+        addClassName(newClassName) {
+            return this.className = newClassName;
+        }
+
+        addEmail(newEmail) {
+            return this.email = newEmail;
+        }
+
+        addBirth(newBirth) {
+            return this.birth = newBirth;
+        }
+
+        addModule(newModule) {
+            return this.module = newModule;
+        }
+    }
+
+    function addNew() {
+        let newStudent = new CodegymStudent(id, name, className, email, birth, module);
+        
+    }
 
 </script>
 
