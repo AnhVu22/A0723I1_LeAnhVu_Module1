@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkArray(arr) {
+        // Kiểm tra xem mảng có ít nhất 2 phần tử hay không
+        if (arr.length < 2) {
+            return false;
+        }
+
+        // Tính vị trí giữa của mảng
+        var middleIndex = Math.floor(arr.length / 2);
+
+        // Kiểm tra từng phần tử ở vị trí 1/2 mảng sau
+        for (var i = middleIndex; i < arr.length; i++) {
+            // Tính vị trí tương ứng ở nửa đầu mảng
+            var correspondingIndex = i - middleIndex;
+
+            // Kiểm tra xem có phần tử không thỏa điều kiện hay không
+            if (arr[i] !== arr[correspondingIndex] * arr[correspondingIndex]) {
+                return false;
+            }
+        }
+
+        // Nếu tất cả điều kiện đều đúng, trả về true
+        return true;
+    }
+
+    // Sử dụng hàm và kiểm tra
+    var result = checkArray([1, 2, 3, 1, 4, 9]);
+    console.log(result); // Kết quả sẽ là true
+
+</script>
+</body>
+</html>
