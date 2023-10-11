@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function compareFraction(numerators, denominators) {
+        if (numerators[0] * denominators[1] === numerators[1] * denominators[0]) {
+            return true;
+        }
+        return false;
+    }
+
+    let numerators = [];
+    for (let i = 0; i < 2; i++) {
+        let number = parseInt(prompt("Nhập tử số cần tạo: "));
+        numerators.push(number);
+    }
+    let denominators = [];
+    for (let i = 0; i < 2; i++) {
+        let number = parseInt(prompt("Nhập mẫu số cần tạo: "));
+        denominators.push(number);
+    }
+    alert(compareFraction(numerators, denominators));
+</script>
+</body>
+</html>

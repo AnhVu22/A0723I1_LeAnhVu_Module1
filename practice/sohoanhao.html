@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Hàm kiểm tra số hoàn hảo
+    function kiemTraSoHoanHao(n) {
+        var tongUoc = 0;
+        for (var i = 1; i < n; i++) {
+            if (n % i === 0) {
+                tongUoc += i;
+            }
+        }
+        return tongUoc === n;
+    }
+
+    // Hàm hiển thị số hoàn hảo trong mảng
+    function hienThiSoHoanHaoTrongMang(arr) {
+        var soHoanHao = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (kiemTraSoHoanHao(arr[i])) {
+                soHoanHao.push(arr[i]);
+            }
+        }
+        return soHoanHao;
+    }
+
+    // Mảng chứa các số cần kiểm tra
+    var mangSo = [6, 28, 12, 496, 8128, 24];
+
+    // Hiển thị số hoàn hảo trong mảng
+    var ketQua = hienThiSoHoanHaoTrongMang(mangSo);
+    console.log("Các số hoàn hảo trong mảng: " + ketQua);
+
+</script>
+</body>
+</html>

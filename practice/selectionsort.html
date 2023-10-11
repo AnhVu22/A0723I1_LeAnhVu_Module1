@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function selectionSort(array) {
+        for (let i = 0; i < array.length; i++) {
+            //Tìm kiếm phần tử bé nhất trong dãy chưa được sắp xếp
+            let minIndex = i;
+            for (let j = i + 1; j < array.length; j++) {
+                if (array[j] < array[minIndex])
+                    minIndex = j;
+            }
+
+            //Đổi chỗ phần tử bé nhất với phần tử đầu tiên
+            [array[i], array[minIndex]] = [array[minIndex], array[i]];
+        }
+    }
+
+</script>
+</body>
+</html>

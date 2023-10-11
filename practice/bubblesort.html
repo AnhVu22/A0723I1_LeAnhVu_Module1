@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function bubbleSort(array) {
+        for (var i = 0; i < array.length; i++) {
+            for (var j = 0; j < (array.length - i); j++) {
+//array.lenth - i để trừ đi lần chạy trước đó
+                if (array[j] > array[j + 1]) { //Đổi chỗ vị trí phần tử theo cặp nếu không đúng vị trí.
+                    var temp = arr[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+    }
+
+    var arr = [5, 3, 8, 4, 6];
+    bubbleSort(arr);
+
+    // function bubbleSort(array) {
+    //     for (var i = 0; i < array.length; i++) {
+    //         for (var j = 0; j < (array.length - i); j++) {
+    //             //array.lenth - i để trừ đi lần chạy trước đó
+    //             if (array[j] > array[j + 1]) { //Đổi chỗ vị trí phần tử theo cặp nếu không đúng vị trí.
+    //                 [array[j], array[j + 1]] = [array[j + 1], array[j]];
+    //             }
+    //         }
+    //     }
+    //     console.log(arr);
+    // }
+    //
+    // var arr = [5, 3, 8, 4, 6];
+    // bubbleSort(arr);
+
+</script>
+</body>
+</html>

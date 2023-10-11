@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arr[] = 5, 3, 8, 4,  6
+
+    //Đổi chỗ phần tử ở vị trí 1 và 3
+
+    //Kết quả: 5, 4, 8, 3, 6
+
+    function swap(array, position1, position2)
+    {
+        var temp = array[position1];
+        array[position1] = array[position2];
+        array[position2] = temp;
+
+        console.log(array);
+    }
+
+    //Cách rút gọn
+    [array[position1, array[position2]] = [array[position2], array[position1]]
+
+</script>
+</body>
+</html>
